@@ -56,6 +56,12 @@ body {
     color: #d8dadd;
 }
 
+.contacts-link:hover,
+.projects-link:hover {
+    color: #ff6d08;
+}
+
+
 /*-----------------------------------Main------------------------------*/
 .tech-skills-container {
     margin: 55px 40px 0;
