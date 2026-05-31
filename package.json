@@ -1,0 +1,16 @@
+{
+  "name": "cv-yevhen-zinevych",
+  "version": "1.0.0",
+  "description": "Professional CV for Yevhen Zinevych",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": [
+    "cv",
+    "resume",
+    "portfolio"
+  ],
+  "author": "Yevhen Zinevych",
+  "license": "MIT"
+}
