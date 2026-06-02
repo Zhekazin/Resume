@@ -13,9 +13,11 @@ body {
 .wrapper {
     background: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 }
 /*-----------------------------------Sidebar------------------------------*/
 
@@ -23,15 +25,21 @@ body {
 .sidebar {
     background-color: #1e2939;
     width: 370px;
+    flex: 0 0 370px;
     padding: 0;
-
 }
 
 .my-photo {
-  width: 370px;
+  width: 100%;
+  height: auto;
   display: block;
   margin: 0;
   padding: 0;
+}
+
+.about-me-container {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .contacts-container {
@@ -200,4 +208,105 @@ body {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 320px;
+        flex: 0 0 320px;
+    }
+
+    .contacts-container,
+    .tech-skills-container,
+    .soft-skills-container {
+        margin: 50px 30px 0;
+    }
+
+    .about-me-container {
+        padding: 80px 50px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .my-photo {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .contacts-container,
+    .tech-skills-container,
+    .soft-skills-container {
+        margin: 40px 25px 0;
+    }
+
+    .about-me-container {
+        padding: 40px 30px;
+    }
+
+    .projects-item {
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: baseline;
+    }
+
+    .dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 10px 30px;
+    }
+
+    .about-me-container {
+        padding: 30px 20px;
+    }
+
+    .contacts-container,
+    .tech-skills-container,
+    .soft-skills-container {
+        margin: 30px 20px 0;
+    }
+
+    .contacts-title,
+    .tech-skills-title,
+    .about-me-title {
+        font-size: 20px;
+    }
+
+    .profession,
+    .name,
+    .description,
+    .projects-link,
+    .tech-name,
+    .profession-duties,
+    .contacts-link,
+    .contacts-link-type {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .profession-title {
+        font-size: 15px;
+    }
+
+    .profession-time {
+        font-size: 11px;
+    }
+
+    .projects-item {
+        margin-left: 0;
+    }
 }
