@@ -23,7 +23,7 @@ body {
 
 .sidebar {
   background-color: #1e2939;
-  width: 370px;
+  width: 320px;
   flex: 0 0 370px;
   padding: 0;
 }
@@ -43,7 +43,7 @@ body {
 
 /*--------------------CONTACTS-----------------------------*/
 .contacts-container {
-  margin: 60px 40px 0;
+  margin: 55px 40px 0;
   color: #ffffff;
 }
 
@@ -159,14 +159,14 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .name {
   font-size: 45px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 30;
+  margin-bottom: 25px;
 }
 
 .description {
